@@ -8,9 +8,10 @@
 <body>
   <script>
     if (navigator.userAgent.match(/(iPhone|iPad|iPod)/i)) {
-      window.location.href = "GLOW.usdz";
+      // моментальный редирект на .usdz — ARKit сразу откроет камеру
+      window.location.href = "https://pavlikbelike.github.io/ar/GLOW.usdz";
     } else {
-      document.body.innerHTML = "<p>AR доступен только на iPhone/iPad в Safari.</p>";
+      document.body.innerHTML = "<p>This experience is only available on iOS with Safari.</p>";
     }
   </script>
 </body>
